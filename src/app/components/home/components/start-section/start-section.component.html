@@ -1,0 +1,30 @@
+<owl-carousel-o [options]="advertisementsOptions">
+
+  <ng-container *ngFor="let slide of sliderImages">
+    <ng-template carouselSlide >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8 text-center align-items-center d-flex justify-content-center" style="object-fit: cover">
+                <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title" style="object-fit: cover" >
+              </div>
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 text-center d-flex flex-column align-items-center" style="background: #232429">
+                <div class="mt-5 align-items-center d-flex justify-content-center fa-4x home-icon-wr" >
+                  <fa-icon [icon]="faTrain" style="color: #126AFE"></fa-icon>
+                </div>
+                <h1 class=" home-header mt-2" style="color: white">- NEAT -</h1>
+                <h5 class="me-3 ms-3 mt-1" style="color: white">A big range of reliable Weighing
+                  and Counting scales for shops and
+                  supermarkets.</h5>
+                <button type="button" class="btn btn-primary btn-header-one mb-4 mt-5">Primary</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </ng-template>
+  </ng-container>
+
+</owl-carousel-o>

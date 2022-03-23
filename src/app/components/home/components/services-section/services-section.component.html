@@ -1,0 +1,37 @@
+<div class="container-fluid mt-5" id="container-fluid-Services ">
+  <div class="row">
+    <div class="col" style="background: #232429; width: 100%;">
+      <h5 class="text-service-s txt-blue mt-4">Our Services</h5>
+      <h1 class="txt-service-h mt-2">We Provide
+        <br>
+        <span style="color: #126AFE">The best Service</span></h1>
+
+    </div>
+    <div class="col" style="background: #232429; width: 100%;">
+      <p class="txt-service-p mt-4" style="font-size: 1.4vw;">The one-stop-place for all weighing scale services and
+        requirements. </p>
+    </div>
+    <div class="w-100"></div>
+    <div class="col" style="background: #232429; width: 100%;" >
+      <owl-carousel-o [options]="customOptions2" >
+        <ng-container *ngFor="let slide of projectImages" >
+          <ng-template carouselSlide let-owlItem >
+            <div class="slide" [@activeSlide]="owlItem.isCentered ? 'active' : 'inActive'">
+            <div class="crd-service-one text-center d-flex flex-column align-items-center">
+              <div class="mt-5 d-flex align-items-center justify-content-center card-round" [@cardSlide]="owlItem.isCentered ? 'active' : 'inActive'">
+                <fa-icon [icon]="faFacebook" class="ico-service fa-5x"></fa-icon>
+              </div>
+              <div><h2 class="mt-3 me-3 ms-3" style="color: white;">{{slide.subheading1}}<br>
+                {{slide.title}}</h2></div>
+              <hr style="width: 4vw;height: 1vh; background: white">
+              <div class="mb-4"><button type="button" class="btn btn-link mt-3 btn-rm" >Read more >></button></div>
+            </div>
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+
+  </div>
+
+</div>

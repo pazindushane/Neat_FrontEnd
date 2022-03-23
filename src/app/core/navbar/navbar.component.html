@@ -1,0 +1,86 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark top-bar">
+  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+      <a class="nav-link text-one" href="#">
+                <span>
+                  <fa-icon [icon]="faLocationArrow" class="iconz"></fa-icon>&nbsp; Kochchikade, Negombo
+                </span>
+      </a>
+    </li>
+    &nbsp;
+    &nbsp;
+    <li class="nav-item">
+      <a class="nav-link text-one" href="#">
+                <span>
+                  <fa-icon [icon]="faPhone" class="iconz"></fa-icon>&nbsp; +94 71 2762673
+                </span>
+      </a>
+    </li>
+    &nbsp;
+    &nbsp;
+    <li class="nav-item">
+      <a class="nav-link text-one" href="#">
+                <span>
+                  <fa-icon [icon]="faFacebook" class="s-icons"></fa-icon>
+                </span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-one" href="#">
+                <span>
+                  <fa-icon [icon]="faInstagram" class="s-icons"></fa-icon>
+                </span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-one" href="#">
+                <span>
+                  <fa-icon [icon]="faTwitter" class="s-icons"></fa-icon>
+                </span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-one" href="#">
+                <span>
+                  <fa-icon [icon]="faYoutube" class="s-icons"></fa-icon>
+                </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img alt="" class="d-inline-block align-text-center" src="../../../assets/img/Logo.png" width="140">
+      <span></span>
+    </a>
+    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+            data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a routerLinkActive="buttonActive" [routerLink]="'./home'" class="nav-link text-nav btnhome" href="#" id="btnhome"><span class="btnhome">Home</span></a>
+        </li>
+        &nbsp;
+        <li class="nav-item">
+          <a routerLinkActive="buttonActive" [routerLink]="'./aboutUs'" class="nav-link text-nav" href="#" id="btnaboutus"><span>About Us</span></a>
+        </li>
+        &nbsp;
+        <li class="nav-item">
+          <a routerLinkActive="buttonActive" [routerLink]="'./services'" class="nav-link text-nav" href="#" id="btnservices"><span>Services</span></a>
+        </li>
+        &nbsp;
+        <li class="nav-item">
+          <a routerLinkActive="buttonActive" [routerLink]="'./products'" class="nav-link text-nav" href="#" id="btnproducts"><span>Products</span></a>
+        </li>
+        &nbsp;
+        <li class="nav-item">
+          <a routerLinkActive="buttonActive" [routerLink]="'./contactUs'" class="nav-link text-nav" href="#" id="btncontact"><span>Contact Us</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

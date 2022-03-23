@@ -1,0 +1,92 @@
+txt-blue{
+  color: #126AFE;
+}
+
+.txt-service-h{
+  color: white;
+  font-family: RohnRounded ☞;
+}
+
+.txt-service-p{
+  font-family: Quicksand;
+  color: white;
+}
+
+.text-service-s{
+  font-family: Quicksand;
+  font-size:2vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.text-service-s:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid white;
+  width: 1px;
+}
+
+.txt-blue{
+  color: #126AFE;
+}
+
+.owlItem > div {
+  cursor: pointer;
+  margin: 7% 0%;
+  transition: margin 0.4s ease;
+}
+.owlItem.activeSlide > div {
+  cursor: auto;
+  margin: 0;
+  width: 23vw;
+  height: 60vh;
+  background: #000098;
+  border-radius: 14px;
+}
+
+.owlItem:not(.activeSlide) > div{
+  width: 23vw;
+  height: 60vh;
+  background: #121212;
+  border-radius: 14px;
+}
+
+.owlItem:not(.activeSlide) > div:hover {
+  opacity: .75;
+}
+
+.owlItem.activeSlide > div > .card-round {
+  background: #126AFE;
+  width: 10vw;
+  height: 20vh;
+  border-radius: 100%
+}
+
+.owlItem:not(.activeSlide) > div > .card-round{
+  background: #222222;
+  width: 10vw;
+  height: 20vh;
+  border-radius: 100%
+}
+
+.owlItem.activeSlide > div > .card-round > .ico-service{
+  color: white;
+  width: 65%;
+  height: 65%
+}
+
+.owlItem:not(.activeSlide) > div > .card-round > .ico-service{
+  color: #126AFE;
+  width: 65%;
+  height: 65%
+}
+
+.owlItem.activeSlide > div > div > button{
+  text-decoration: none;
+  color: white
+}
+
+.owlItem:not(.activeSlide) > div > div > button{
+  text-decoration: none;
+  color: #126AFE;
+}
