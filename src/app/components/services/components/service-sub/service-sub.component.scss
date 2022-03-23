@@ -1,0 +1,117 @@
+.cover-one-5{
+  background: #232429;
+  font-size: 1.4vw;
+  width: 83vw;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.cover-one-6{
+  background: #232429;
+  font-size: 1.4vw;
+  width: 83vw;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+
+/*================================*/
+
+//.service-ul{
+//  display: none;
+//}
+//
+//.cover-one-5:hover{
+//  -webkit-transition: all 2s ease;
+//  -moz-transition: all 2s ease;
+//  -o-transition: all 2s ease;
+//  transition: all 5s ease;
+//  cursor: pointer;
+//}
+//
+//.cover-one-5:hover .service-ul{
+//  display: block;
+//  -webkit-transition: display 2s ease-out;
+//  -moz-transition: display 2s ease-out;
+//  -o-transition: display 2s ease-out;
+//  transition: display 2s ease-out;
+//  cursor: pointer;
+//}
+//
+//.img-row{
+//  display: none;
+//
+//}
+//
+//.cover-one-5:hover .img-row{
+//  display: block;
+//  -webkit-transition: display 2s ease-out;
+//  -moz-transition: display 2s ease-out;
+//  -o-transition: display 2s ease-out;
+//  transition: display 2s ease-out;
+//  cursor: pointer;
+//
+//}
+
+.cover-one-5:hover .ico-container-5{
+  background: #121212;
+
+}
+
+.cover-one-5:hover .ico-service-5{
+  color: #126AFE;
+}
+
+.cover-one-6:hover .ico-container-5{
+  background: #121212;
+
+}
+
+.cover-one-6:hover .ico-service-5{
+  color: #126AFE;
+}
+
+.ico-container-5{
+  width: 6vw;
+  height: 12vh;
+  border-radius: 100%;
+  /*background: #121212;*/
+  background: #126AFE;
+}
+
+.ico-service-5{
+  width: 73%;
+  height: 73%;
+  color: white;
+}
+
+
+.txt-sub-head-5{
+  font-family: RohnRounded ☞;
+  color: white;
+}
+
+.service-ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.service-ul > li {
+  padding-left: 1em;
+  text-indent: -1em;
+  color: white;
+}
+
+.service-ul > li:before {
+  content: '✓';
+
+
+  /*content: '\2714\0020';*/
+  /*content: '✔️';*/
+  padding-right: 5px;
+  color: #126AFE;
+  font-size: 25px;
+}

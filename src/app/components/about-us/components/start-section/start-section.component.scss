@@ -1,0 +1,91 @@
+nav-head-2{
+  font-family: Quicksand;
+  color: #D32427;
+}
+
+.text-start-2{
+  font-family: Quicksand;
+  font-size:2vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.text-start-2:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #000;
+  width: 1px;
+}
+
+
+
+.txt-red-2{
+  color: #D32427;
+}
+
+.text-sub-2{
+  font-family: RohnRounded ☞;
+  font-size:3vw;
+}
+
+.ul-cover-2{
+  background: #232429;
+  font-size: 1.4vw;
+  /*padding: 3%;*/
+  width: 33vw;
+  height: 57vh;
+  border-radius: 14px;
+}
+
+.li-item-2{
+  color: white;
+  list-style: none;
+  font-family: Quicksand;
+}
+
+.li-item-2::before{
+  /*font-size: 25px;*/
+  content: " • ";
+  color: #D32427;
+}
+
+.viewmore2{
+  background: #D32427;
+  color: white;
+  font-family: Quicksand;
+  font-size: 1.4vw;
+}
+
+.square-cont{
+  padding-top: 6%;
+  padding-bottom: 6%;
+  align-items: center;
+  align-self: center;
+}
+
+
+.square {
+  width: 25vw;
+  height: 55vh;
+  border-radius: 14px;
+  background: #D32427;
+}
+
+.square-two {
+  width: 25vw;
+  height: 55vh;
+  margin-left: 12%;
+  margin-top: -11%;
+  padding-bottom: 10%;
+  border-radius: 14px;
+  background: #232429;
+}
+
+.mainscale{
+  margin-left: 21%;
+}
+
+.txt-sub-head-2{
+  font-family: RohnRounded ☞;
+  color: white;
+}

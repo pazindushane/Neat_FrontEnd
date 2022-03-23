@@ -1,0 +1,96 @@
+<div class="container-fluid mb-5" id="container-fluid-section-one ">
+  <div class="row" *ngFor="let folder of serviceImages">
+
+<!--    =======================================================================-->
+
+    <mat-accordion>
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <div class="col mt-5">
+              <div class="d-flex align-items-center justify-content-center mt-5">
+                <div class="cover-one-5 row row-cols-auto">
+                  <div class="ico-container-5 d-flex align-items-center justify-content-center mt-3 mb-3 ms-4">
+                    <i class="fa-brands fa-cloudscale ico-service-5"></i>
+                  </div>
+                  <h1 class="txt-sub-head-5 mb-4 mt-4 ms-4 " style="color: white">{{folder.name}}</h1>
+                </div>
+              </div>
+            </div>
+          </mat-panel-title>
+
+        </mat-expansion-panel-header>
+        <div class="col me-3">
+          <div class="d-flex align-items-center justify-content-center">
+            <div class="cover-one-6 row row-cols-auto">
+
+              <div class="col">
+                <ul class="mb-4 ms-5 service-ul">
+                  <li class="li-item">All Kinds of Scales Selling & Distributing</li>
+                  <li class="li-item">All Kinds of Scales Selling & Distributing</li>
+                  <li class="li-item">All Kinds of Scales Selling & Distributing</li>
+                  <li class="li-item">All Kinds of Scales Selling & Distributing</li>
+                </ul>
+              </div>
+              <div class="w-100"></div>
+              <div class="img-row">
+                <div class="row mb-4 ms-4 mt-4 ">
+                  <div class="col " >
+                    <img [src]="folder.src" style="width: 300px;  object-fit: cover" alt="img">
+                  </div>
+                  <div class="col ms-4" >
+                    <img [src]="folder.src" style="width: 300px;  object-fit: cover" alt="img">
+                  </div>
+                  <div class="col ms-4" >
+                    <img [src]="folder.src" style="width: 300px;  object-fit: cover" alt="img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+      </mat-expansion-panel>
+    </mat-accordion>
+
+
+
+    <!--    ==============================================================================-->
+<!--    <div class="col">-->
+
+<!--      <div class="d-flex align-items-center justify-content-center mt-5">-->
+<!--        <div class="cover-one-5 row row-cols-auto">-->
+<!--          <div class="ico-container-5 d-flex align-items-center justify-content-center mt-3 mb-3 ms-4">-->
+<!--            <i class="fa-brands fa-cloudscale ico-service-5"></i>-->
+<!--          </div>-->
+<!--          &lt;!&ndash;                    <h1 class="txt-sub-head mb-4 mt-4 ms-4 col " style="color: white">All Scale calibration processss</h1>&ndash;&gt;-->
+<!--          <div class="col">-->
+<!--            <h1 class="txt-sub-head-5 mb-4 mt-4 ms-4 " style="color: white">{{folder.name}}</h1>-->
+<!--            <ul class="mb-4 ms-5 service-ul">-->
+<!--              <li class="li-item">All Kinds of Scales Selling & Distributing</li>-->
+<!--              <li class="li-item">All Kinds of Scales Selling & Distributing</li>-->
+<!--              <li class="li-item">All Kinds of Scales Selling & Distributing</li>-->
+<!--              <li class="li-item">All Kinds of Scales Selling & Distributing</li>-->
+<!--            </ul>-->
+<!--          </div>-->
+<!--          <div class="w-100"></div>-->
+<!--          <div class="img-row">-->
+<!--            <div class="row mb-4 ms-4 mt-4 ">-->
+<!--              <div class="col " style="width: 100px; height: 100px; background: blue">-->
+
+<!--              </div>-->
+<!--              <div class="col ms-4" style="width: 100px; height: 100px; background: yellow">-->
+
+<!--              </div>-->
+<!--              <div class="col ms-4" style="width: 100px; height: 100px; background: black">-->
+
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+  </div>
+</div>

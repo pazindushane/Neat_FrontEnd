@@ -1,0 +1,30 @@
+
+
+.txt-product-h{
+  font-family: RohnRounded ☞;
+
+}
+
+.crd-category{
+  background: #232429;
+  width: 25vw;
+  height: 8vh;
+  border-radius: 16px;
+  cursor: pointer;
+
+}
+
+.crd-category:hover{
+  background: #D32427;
+  border: 2px solid white;
+
+}
+
+.crd-category.selected, .crd-category.selected:hover {
+  background: #D32427;
+  border: 2px solid white;
+}
+
+
+
+

@@ -1,0 +1,32 @@
+<div class="container-fluid align-items-center justify-content-center mt-4" id="container-fluid-section-three"
+     style="background: #2e2e2e;">
+  <div class="mt-4 text-center align-items-center justify-content-center">
+    <h1 class="mt-4" style="color: #0651A9">Gallery</h1>
+  </div>
+  <div class="mt-5">
+    <div class="container">
+      <div class="popup" role="alert">
+
+      </div>
+
+    </div>
+      <owl-carousel-o [options]="customOptions2">
+        <ng-container *ngFor="let slide of productImages">
+          <ng-template carouselSlide let-owlItem>
+            <div [@activeSlide]="owlItem.isCentered ? 'active' : 'inActive'" class="slide">
+              <img style="object-fit: cover" [alt]="slide.alt" [src]="slide.src">
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+
+  </div>
+</div>
+<div  id="container-fluid-section-four">
+  <div class="d-flex align-items-center justify-content-center">
+    <div class="cover-one">
+      <h1 class="text-center txt-sub-head-2 mb-4 mt-4" style="color: white">18+ YEARS OF<br>
+        TRUSTED WEIGHING</h1>
+    </div>
+  </div>
+</div>

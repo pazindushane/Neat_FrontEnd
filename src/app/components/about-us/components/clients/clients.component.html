@@ -1,0 +1,18 @@
+<div class="container-fluid mt-5" id="container-fluid-section-six" >
+  <div class="text-center align-items-center justify-content-center">
+    <h1 style="color: #0651A9">Our Reputed Clients</h1>
+  </div>
+  <div class="mt-4" style="background: #BACFE7;">
+    <div class="p-2">
+      <owl-carousel-o [options]="customOptions3">
+        <ng-container *ngFor="let slide of productImages2">
+          <ng-template carouselSlide>
+            <div  class="slide">
+              <img style="object-fit: cover" [alt]="slide.alt" [src]="slide.src">
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+  </div>
+</div>
