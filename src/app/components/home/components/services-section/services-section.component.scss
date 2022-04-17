@@ -4,7 +4,7 @@ txt-blue{
 
 .txt-service-h{
   color: white;
-  font-family: RohnRounded ☞;
+  font-family: Rajdhani;
 }
 
 .txt-service-p{
@@ -14,16 +14,18 @@ txt-blue{
 
 .text-service-s{
   font-family: Quicksand;
-  font-size:2vw;
+  font-size:35px;
   display: flex;
   flex-direction: row;
 }
 
-.text-service-s:after {
+.hrtxt{
   content: "";
-  flex: 1 1;
+  opacity: 1;
   border-bottom: 2px solid white;
-  width: 1px;
+  width: 180px;
+  height: 3px;
+  margin-top: 31px;
 }
 
 .txt-blue{
@@ -89,4 +91,8 @@ txt-blue{
 .owlItem:not(.activeSlide) > div > div > button{
   text-decoration: none;
   color: #126AFE;
+}
+
+.hr-styles{
+  width: 70px;height: 18px; background: white
 }

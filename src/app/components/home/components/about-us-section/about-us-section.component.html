@@ -15,7 +15,7 @@
     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6" >
       <div>
         <div>
-          <h5 class="text-start mt-4 txt-red" >Welcome to Neat, </h5>
+          <h5 class="text-start mt-4 txt-red" >Welcome to Neat,<hr class="hrtxt mt-4"/></h5>
           <h2 class="text-sub"> The <span class="txt-red">Leader</span> in importing,
             distributing, repairing
             and servicing of all
@@ -23,7 +23,7 @@
           </h2>
         </div>
         <div>
-          <p class="mt-4" style="font-size: 1.4vw;">We are the specialist in,</p>
+          <p class="mt-4" style="font-size: 16px;">We are the specialist in,</p>
         </div>
 
         <div class="ul-cover mt-4">
@@ -34,7 +34,7 @@
         </div>
 
         <div class="mt-4" >
-          <button type="button" class="btn btn-viewmore">View more</button>
+          <button type="button" class="btn btn-viewmore" [routerLink]="'../aboutUs'" (click)="scrollToTop()">View more</button>
         </div>
       </div>
     </div>

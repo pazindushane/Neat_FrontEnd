@@ -10,40 +10,28 @@ export class SubService {
     return ({
       memberStore : [
         {
-          name: 'Photos1',
+          name: 'All Scale calibration process',
           updated: '1/1/16',
           desc: 'Photos1 desc',
           src:'https://i.ibb.co/MgSkSX6/user3.jpg'
         },
         {
-          name: 'Photos2',
+          name: 'All Scale repair & Performance report',
           updated: '1/1/16',
           desc: 'Photos1 desc',
           src:'https://i.ibb.co/9bPbTZz/user2.jpg'
         },
         {
-          name: 'Photos3',
+          name: 'All Scale repair',
           updated: '1/1/16',
           desc: 'Photos1 desc',
           src:'https://i.ibb.co/92nY6WT/user1.jpg'
         },
         {
-          name: 'Photos4',
+          name: 'Distributing All Kinds of brand new scales',
           updated: '1/1/16',
           desc: 'Photos1 desc',
           src:'https://i.ibb.co/MgSkSX6/user3.jpg'
-        },
-        {
-          name: 'Photos5',
-          updated: '1/1/16',
-          desc: 'Photos1 desc',
-          src:'https://i.ibb.co/9bPbTZz/user2.jpg'
-        },
-        {
-          name: 'Photos6',
-          updated: '1/1/16',
-          desc: 'Photos1 desc',
-          src:'https://i.ibb.co/92nY6WT/user1.jpg'
         }
       ]
     })

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {SubService} from "../../service/sub.service";
+import { faBalanceScale} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-service-sub',
@@ -7,6 +8,8 @@ import {SubService} from "../../service/sub.service";
   styleUrls: ['./service-sub.component.scss']
 })
 export class ServiceSubComponent implements OnInit {
+  faBalanceScale=faBalanceScale
+
 
   panelOpenState = false;
   serviceImages! :any[];

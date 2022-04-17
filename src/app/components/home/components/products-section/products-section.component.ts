@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {StartSectionService} from "../../services/start-section.service";
 import {OwlOptions} from "ngx-owl-carousel-o";
 import {animate, state, style, transition, trigger} from "@angular/animations";
+import {ViewportScroller} from "@angular/common";
+import { faArrowLeft, faArrowRight} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-products-section',
@@ -16,7 +18,8 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
           background: "black",
           'border-radius' : '14px',
           'width': '100%',
-          'height': '100%'
+          'height': '100%',
+          'cursor': 'pointer'
         })),
       state('inActive', style({
         transform: 'scale(0.7)',
@@ -24,7 +27,8 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
         background: "grey",
         'border-radius' : '14px',
         'width': '100%',
-        'height': '100%'
+        'height': '100%',
+        'cursor': 'pointer'
       })),
       transition('active => inActive', [
         animate('0.5s')
@@ -61,9 +65,12 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
 })
 export class ProductsSectionComponent implements OnInit {
 
+  faArrowLeft=faArrowLeft;
+  faArrowRight=faArrowRight;
+
   productImages! :any[];
 
-  constructor(private Projectservice:StartSectionService) { }
+  constructor(private Projectservice:StartSectionService , private scroll: ViewportScroller) { }
 
   ngOnInit(): void {
     this.productSlider()
@@ -83,7 +90,7 @@ export class ProductsSectionComponent implements OnInit {
     pullDrag: false,
     dots: false,
     navSpeed: 700,
-    navText: ['<', '>'],
+    navText:  [ '<i class="fa-chevron-left"></i>', '<i class="fa-chevron-right></i>"' ],
     center: true,
     responsive: {
       0: {
@@ -100,6 +107,10 @@ export class ProductsSectionComponent implements OnInit {
       }
     },
     nav: true
+  }
+
+  scrollToTop(){
+    this.scroll.scrollToPosition([0,0]);
   }
 
 }

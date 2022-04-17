@@ -1,7 +1,11 @@
-import {Component, Input, OnInit, OnChanges, SimpleChanges} from '@angular/core';
+import {Component, EventEmitter, HostListener, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 import {animate, state, style, transition, trigger} from "@angular/animations";
 import {ProductListService} from "../../services/product-list.service";
 import {OwlOptions} from "ngx-owl-carousel-o";
+import {ViewportScroller} from "@angular/common";
+import {Subscription} from "rxjs";
+import {productDTO} from "../../dto/productDTO";
+import {DatasService} from "../../services/datas.service";
 
 @Component({
   selector: 'app-product-list',
@@ -60,14 +64,30 @@ import {OwlOptions} from "ngx-owl-carousel-o";
   ]
 })
 export class ProductListComponent implements OnInit, OnChanges {
-@Input() selectedCategory!:string;
+
+  // @Output() datas = new EventEmitter<string>();
+  private pageYoffset: any;
+  private _event: any;
+  private allComponentsSub2!: Subscription;
+  loading = false;
+  loadings=true;
+
+
+  @HostListener('window:scroll', ['$event']) onScroll(event: any){
+    this._event = event;
+    this.pageYoffset = window.pageYOffset;
+  }
+
+  @Input() selectedCategory!:string;
   productImages! :any[];
 
-  constructor(private plistservice:ProductListService) { }
+
+  constructor(private plistservice:ProductListService,
+              private scroll: ViewportScroller,
+              private ddetails:DatasService) { }
 
   ngOnInit(): void {
-    // this.productSlider()
-
+    this.productSlider("Cells");
   }
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -75,12 +95,36 @@ export class ProductListComponent implements OnInit, OnChanges {
     this.productSlider(this.selectedCategory);
   }
 
+  getSitem(cat: string): void {
+    this.ddetails.setItemId(cat)
+  }
+
 
 
   productSlider(type:string){
-    this.productImages = this.plistservice.getProjectDetails(type);
-    console.log(this.productImages)
-    // this.plistservice.getProjectDetails(type);
+    this.loading = true;
+    this.loadings=false;
+    this.allComponentsSub2 = this.plistservice.getProjectDetails(type)
+      .subscribe(result => {
+        console.log(result.content)
+        if(result.content != null){
+          this.loading = false;
+          this.loadings=true;
+          this.productImages = result.content;
+        }else{
+          this.loading = false;
+          this.loadings=false;
+        }
+        // this.paginator.length = result.content.length;
+
+        // this.refreshPageCount();
+      }, error => {
+        console.log(error);
+      });
+  }
+
+  scrollToTop(){
+    this.scroll.scrollToPosition([0,0]);
   }
 
   customOptions2: OwlOptions = {
@@ -111,6 +155,7 @@ export class ProductListComponent implements OnInit, OnChanges {
     },
     nav: true
   }
+
 
 
 

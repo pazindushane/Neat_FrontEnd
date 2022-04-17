@@ -16,11 +16,11 @@
           <h3 class="txt-footer mt-4">Quick Links</h3>
         </div>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">services</a></li>
-          <li><a href="#">portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a [routerLink]="'./home'" (click)="scrollToTop()" href="#">Home</a></li>
+          <li><a [routerLink]="'./aboutUs'" (click)="scrollToTop()" href="#">about</a></li>
+          <li><a [routerLink]="'./services'" (click)="scrollToTop()" href="#">services</a></li>
+          <li><a [routerLink]="'./products'" (click)="scrollToTop()" href="#">Products</a></li>
+          <li><a [routerLink]="'./contactUs'" (click)="scrollToTop()" href="#">Contact</a></li>
         </ul>
       </div>
       <button type="button" class="ms-3 btn btn-message mt-4">Send Message&nbsp;<i class="fa-solid fa-paper-plane" style="color: #FFFFFF"></i></button>
@@ -47,7 +47,7 @@
           <fa-icon style="color: #126AFE" [icon]="faEnvelope" class="ico-mail"></fa-icon>
         </div>
         <div class="col-auto ">
-          <h6 style="color: white;" class="txt-mail">neatweigh@yahoo.com</h6>
+          <h6 style="color: white;" class="txt-mail">neatweighingscaleltd@yahoo.com</h6>
         </div>
       </div>
     </div>

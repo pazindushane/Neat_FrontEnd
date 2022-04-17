@@ -5,6 +5,7 @@ import { ContactUsRoutingModule } from './contact-us-routing.module';
 import { ContactUsComponent } from './contact-us.component';
 import { SubContactComponent } from './components/sub-contact/sub-contact.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
     imports: [
         CommonModule,
         ContactUsRoutingModule,
-        FontAwesomeModule
+        FontAwesomeModule,
+        FormsModule
     ]
 })
 export class ContactUsModule { }

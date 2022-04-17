@@ -10,6 +10,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {CarouselModule} from "ngx-owl-carousel-o";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { NgxScrollTopModule } from 'ngx-scrolltop';
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { NgxScrollTopModule } from 'ngx-scrolltop';
     FontAwesomeModule,
     CarouselModule,
     NgxScrollTopModule,
+    HttpClientModule,
 
   ],
   providers: [],

@@ -5,6 +5,7 @@ import { ServicesRoutingModule } from './services-routing.module';
 import { ServicesComponent } from './services.component';
 import {ServiceSubComponent} from "./components/service-sub/service-sub.component";
 import {MatExpansionModule} from "@angular/material/expansion";
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 // import {MatExpansionModule} from "@angular/material/expansion";
 
 
@@ -17,6 +18,7 @@ import {MatExpansionModule} from "@angular/material/expansion";
         CommonModule,
         ServicesRoutingModule,
         MatExpansionModule,
+        FontAwesomeModule,
         // MatExpansionModule
     ]
 })

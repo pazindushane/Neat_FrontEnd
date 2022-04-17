@@ -1,7 +1,8 @@
 .cover-one-5{
   background: #232429;
-  font-size: 1.4vw;
-  width: 83vw;
+  font-size: 16px;
+  width: 1250px;
+  //height: 154px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 0px;
@@ -10,8 +11,9 @@
 
 .cover-one-6{
   background: #232429;
-  font-size: 1.4vw;
-  width: 83vw;
+  font-size: 16px;
+  width: 1250px;
+  //height: 154px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   cursor: pointer;
@@ -74,22 +76,20 @@
 }
 
 .ico-container-5{
-  width: 6vw;
-  height: 12vh;
+  width: 120px;
+  height: 120px;
   border-radius: 100%;
   /*background: #121212;*/
   background: #126AFE;
 }
 
 .ico-service-5{
-  width: 73%;
-  height: 73%;
   color: white;
 }
 
 
 .txt-sub-head-5{
-  font-family: RohnRounded ☞;
+  font-family: Rajdhani;
   color: white;
 }
 
@@ -114,4 +114,8 @@
   padding-right: 5px;
   color: #126AFE;
   font-size: 25px;
+}
+
+.img-styles{
+  width: 250px;  object-fit: cover
 }

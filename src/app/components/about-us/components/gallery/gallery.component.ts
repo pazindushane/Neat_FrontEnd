@@ -46,7 +46,7 @@ export class GalleryComponent implements OnInit {
   }
 
   gallerySlider(){
-    this.productImages = this.aboutssservice.getProjectDetails().startStore
+    this.productImages = this.aboutssservice.getGalleryDetails().startStore
   }
 
 

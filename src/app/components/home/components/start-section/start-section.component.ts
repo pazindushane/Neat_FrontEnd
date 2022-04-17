@@ -50,7 +50,7 @@ export class StartSectionComponent implements OnInit {
 
   advertisementsOptions: OwlOptions = {
     autoplay: true,
-    loop: false,
+    loop: true,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,

@@ -5,7 +5,8 @@
         <div class="col mt-4 ms-3 me-3 form-check">
           <div class="row mt-2" >
             <!--                      <a class="row mt-2" href="containerfluidProducts">-->
-            <input type="radio" class="btn-check " name="options-outlined" id="danger-outlinedj" autocomplete="off" (click)="clicked('All')">
+            <input (click)="clicked('All');scrollToDown()" autocomplete="off" class="btn-check " id="danger-outlinedj" name="options-outlined"
+                   type="radio">
             <label style="border-radius: 14px" class="btn btn-outline-danger " for="danger-outlinedj">
                           <span class="row">
                               <h4 class="col-auto" style="color: white">All - Categories</h4>
@@ -17,7 +18,8 @@
 
         <div class="col mt-4 ms-3 me-3  form-check">
           <div class="row mt-2">
-            <input type="radio" class="btn-check " name="options-outlined" id="danger-outlinedi" autocomplete="off" (click)="clicked('Platform')">
+            <input (click)="clicked('Platform');scrollToDown()" autocomplete="off" class="btn-check " id="danger-outlinedi" name="options-outlined"
+                   type="radio">
             <label style="border-radius: 14px" class="btn btn-outline-danger " for="danger-outlinedi">
                           <span class="row">
                               <h4 class="col-auto" style="color: white">Platform & Floor Scales</h4>
@@ -31,7 +33,8 @@
 
         <div class="col mt-4 ms-3 me-3  form-check" >
           <div class="row mt-2">
-            <input type="radio" class="btn-check " name="options-outlined" id="danger-outlinedh" autocomplete="off" (click)="clicked('Indicator')">
+            <input (click)="clicked('Indicator');scrollToDown()" autocomplete="off" class="btn-check " id="danger-outlinedh" name="options-outlined"
+                   type="radio">
             <label style="border-radius: 14px" class="btn btn-outline-danger " for="danger-outlinedh">
                           <span class="row">
                               <h4 class="col-auto" style="color: white">Weighing Indiactors</h4>
@@ -42,7 +45,8 @@
 
         <div class="col mt-4 ms-3 me-3  form-check" >
           <div class="row mt-2">
-            <input type="radio" class="btn-check " name="options-outlined" id="danger-outlinedg" autocomplete="off" (click)="clicked('Waterproof')">
+            <input (click)="clicked('Waterproof');scrollToDown()" autocomplete="off" class="btn-check " id="danger-outlinedg" name="options-outlined"
+                   type="radio">
             <label style="border-radius: 14px" class="btn btn-outline-danger " for="danger-outlinedg">
                           <span class="row">
                               <h4 class="col-auto" style="color: white">WaterProof Scales</h4>
@@ -55,7 +59,8 @@
 
         <div class="col mt-4 ms-3 me-3  form-check" >
           <div class="row mt-2">
-            <input type="radio" class="btn-check " name="options-outlined" id="danger-outlinedf" autocomplete="off" (click)="clicked('Hanging')">
+            <input (click)="clicked('Hanging');scrollToDown()" autocomplete="off" class="btn-check " id="danger-outlinedf" name="options-outlined"
+                   type="radio">
             <label style="border-radius: 14px" class="btn btn-outline-danger " for="danger-outlinedf">
                           <span class="row">
                               <h4 class="col-auto" style="color: white">Hanging & Crane Scales</h4>
@@ -66,7 +71,8 @@
 
         <div class="col mt-4 ms-3 me-3  form-check" >
           <div class="row mt-2">
-            <input type="radio" class="btn-check " name="options-outlined" id="danger-outlinede" autocomplete="off" (click)="clicked('Weighbridge')">
+            <input (click)="clicked('Weighbridge');scrollToDown()" autocomplete="off" class="btn-check " id="danger-outlinede" name="options-outlined"
+                   type="radio">
             <label style="border-radius: 14px" class="btn btn-outline-danger " for="danger-outlinede">
                           <span class="row">
                               <h4 class="col-auto" style="color: white">Weighbrige & WeighPads</h4>
@@ -79,7 +85,8 @@
 
         <div class="col mt-4 ms-3 me-3  form-check" >
           <div class="row mt-2">
-            <input type="radio" class="btn-check " name="options-outlined" id="danger-outlinedb" autocomplete="off" (click)="clicked('App')">
+            <input (click)="clicked('App');scrollToDown()" autocomplete="off" class="btn-check " id="danger-outlinedb" name="options-outlined"
+                   type="radio">
             <label style="border-radius: 14px" class="btn btn-outline-danger " for="danger-outlinedb">
                           <span class="row">
                               <h4 class="col-auto" style="color: white">Weighing Applications</h4>
@@ -90,7 +97,8 @@
 
         <div class="col mt-4 ms-3 me-3  form-check" >
           <div class="row mt-2">
-            <input type="radio" class="btn-check " name="options-outlined" id="danger-outlineda" autocomplete="off" (click)="clicked('Counting')">
+            <input (click)="clicked('Counting');scrollToDown()" autocomplete="off" class="btn-check " id="danger-outlineda" name="options-outlined"
+                   type="radio">
             <label style="border-radius: 14px" class="btn btn-outline-danger " for="danger-outlineda">
                           <span class="row">
                               <h4 class="col-auto" style="color: white">Weighing & Counting Scales</h4>
@@ -103,7 +111,8 @@
 
         <div class="col mt-4 ms-3 me-3 mb-4 form-check" >
           <div class="row mt-2">
-            <input type="radio" class="btn-check " name="options-outlined" id="danger-outlinedd" autocomplete="off" (click)="clicked('Analytical')">
+            <input (click)="clicked('Analytical');scrollToDown()" autocomplete="off" class="btn-check " id="danger-outlinedd" name="options-outlined"
+                   type="radio">
             <label style="border-radius: 14px" class="btn btn-outline-danger " for="danger-outlinedd">
                           <span class="row">
                               <h4 class="col-auto" style="color: white">Analytical, Density & Moisture Scales</h4>
@@ -115,7 +124,8 @@
 
         <div class="col mt-4 ms-3 me-3 mb-4 form-check" >
           <div class="row mt-2 ">
-            <input type="radio" class="btn-check " name="options-outlined" id="danger-outlined" autocomplete="off" checked (click)="clicked('Cells')">
+            <input (click)="clicked('Cells');scrollToDown()" autocomplete="off" checked class="btn-check " id="danger-outlined"
+                   name="options-outlined" type="radio">
             <label style="border-radius: 14px" class="btn btn-outline-danger " for="danger-outlined">
                           <span class="row">
                               <h4 class="col-auto" style="color: white">Load Cells</h4>

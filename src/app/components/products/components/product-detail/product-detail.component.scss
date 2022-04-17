@@ -1,0 +1,28 @@
+.cover-one-4{
+  background: #232429;
+  font-size: 1.4vw;
+  /*padding: 3%;*/
+  width: 83vw;
+  border-radius: 10px;
+}
+
+.product-ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.product-ul > li {
+  padding-left: 1em;
+  text-indent: -1em;
+  color: white;
+}
+
+.product-ul > li:before {
+  content: '✓';
+  /*content: '\2714\0020';*/
+  /*content: '✔️';*/
+  padding-right: 5px;
+  color: #126AFE;
+  font-size: 25px;
+}

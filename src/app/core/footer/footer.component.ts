@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import { faLocationArrow, faPhone, faEnvelope, faArrowCircleUp} from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import {ViewportScroller} from "@angular/common";
 
 @Component({
   selector: 'app-footer',
@@ -8,6 +9,13 @@ import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  private pageYoffset: any;
+  private _event: any;
+
+  @HostListener('window:scroll', ['$event']) onScroll(event: any){
+    this._event = event;
+    this.pageYoffset = window.pageYOffset;
+  }
 
   faLocationArrow= faLocationArrow;
   faPhone=faPhone;
@@ -18,9 +26,12 @@ export class FooterComponent implements OnInit {
   faYoutube=faYoutube;
   faArrowCircleUp=faArrowCircleUp;
 
-  constructor() { }
+  constructor(private scroll: ViewportScroller) { }
 
   ngOnInit(): void {
+  }
+  scrollToTop(){
+    this.scroll.scrollToPosition([0,0]);
   }
 
 }

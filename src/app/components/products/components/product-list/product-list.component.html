@@ -1,23 +1,28 @@
 <div class="container-fluid " id="container-fluid-Products">
   <div class="row">
     <div class="col text-center mt-5" style="width: 100%;">
-      <h1 class="txt-product-h">Our Latest<br>
-        <span style="color: #D32427">Products</span></h1>
+      <h1 class="txt-product-h">{{selectedCategory}}<br>
+        <span style="color: #D32427">Category</span></h1>
     </div>
     <div class="w-100"></div>
     <div class="col mt-5" >
 
-      <div>
+
+      <div class="d-flex align-items-center justify-content-center" *ngIf="loading">
+        <div class="loadingio-spinner-spinner-2zltxq71xnk"><div class="ldio-qk642wlyrfp">
+          <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+        </div></div>
+      </div>
+      <div *ngIf="loadings">
         <owl-carousel-o [options]="customOptions2" >
           <ng-container *ngFor="let slide of productImages" >
             <ng-template carouselSlide let-owlItem  >
               <div class="slide" [@activeSlide]="owlItem.isCentered ? 'active' : 'inActive'" >
-                <div class="crd-service-two text-center d-flex align-items-center justify-content-center">
+                <div class="crd-service-two text-center d-flex align-items-center justify-content-center ow-card"  >
                   <div class="crd-s-two d-flex flex-column align-items-center justify-content-center" [@cardSlide]="owlItem.isCentered ? 'active' : 'inActive'">
-                    <h3 class="txt-m-type mt-5">Pos Machines</h3>
-                    <h1 class="txt-m-name">Digital POS
-                      Machines</h1>
-                    <button type="button" class="btn btn-link mt-3 btn-seem">See More >></button>
+                    <h3 class="txt-m-type mt-5">{{slide.description}}</h3>
+                    <h1 class="txt-m-name">{{slide.product_name}}</h1>
+                    <button type="button" class="btn btn-link mt-3 btn-seem" [owlRouterLink]="['../details']" (click)="scrollToTop(); getSitem(slide.product_id)">See More >></button>
                   </div>
                   <!--                        <img src="https://via.placeholder.com/400x300/f06/fff/?text=1" alt="">-->
                 </div>

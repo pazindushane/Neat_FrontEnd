@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ViewportScroller} from "@angular/common";
 
 @Component({
   selector: 'app-service-cards',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiceCardsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private scroll: ViewportScroller) { }
 
   ngOnInit(): void {
+  }
+
+  scrollToTop(){
+    this.scroll.scrollToPosition([0,0]);
   }
 
 }

@@ -12,21 +12,27 @@ export class StartSectionService {
       slidesStore: [
         {
           id: "1",
-          src: 'https://www.baltspace.eu/images/baltspace_research/header_rock_boat_cloud_900_300.jpg',
+          src: 'https://i.ibb.co/D9RjSJL/Homepage-Banner1-1.jpg',
           alt: 'Image_1',
-          title: 'Image_1'
+          title: 'The total weighing solutions provider under one roof'
         },
         {
           id: "2",
-          src: 'https://www.baltspace.eu/images/baltspace_research/header_marxan_900_300.jpg',
+          src: 'https://i.ibb.co/Kj02n71/Homepage-Banner2-1.jpg',
           alt: 'Image_2',
-          title: 'Image_3'
+          title: 'A big range of reliable Weighing and Counting scales for shops and supermarkets.'
         },
         {
           id: "3",
-          src: 'http://energiaekonomistit.fi/wp/wp-content/uploads/2012/12/lighthouse-900x300.jpg',
+          src: 'https://i.ibb.co/9WsjsfL/Homepage-Banner3-1.jpg',
           alt: 'Image_3',
-          title: 'Image_3'
+          title: 'Expert in medium and large scale Weighbridge provider and installer in Sri Lanka.'
+        },
+        {
+          id: "4",
+          src: 'https://i.ibb.co/v39D4bg/Homepage-Banner4-1.jpg',
+          alt: 'Image_3',
+          title: 'Calibrations, Testing, Repairing, Maintenance and all other services! '
         },
       ]
     })
@@ -52,7 +58,7 @@ export class StartSectionService {
           id:"3",
           src:'http://energiaekonomistit.fi/wp/wp-content/uploads/2012/12/lighthouse-900x300.jpg',
           subheading1:'All Scale repair',
-          title:'Image_3'
+          title:''
         },
         {
           id:"4",

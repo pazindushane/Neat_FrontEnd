@@ -10,6 +10,7 @@ import { ClientsComponent } from './components/clients/clients.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import {CarouselModule} from "ngx-owl-carousel-o";
+import { YearscardComponent } from './components/yearscard/yearscard.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import {CarouselModule} from "ngx-owl-carousel-o";
     ServiceCardsComponent,
     ServicecateComponent,
     ClientsComponent,
-    GalleryComponent
+    GalleryComponent,
+    YearscardComponent
   ],
     imports: [
         CommonModule,

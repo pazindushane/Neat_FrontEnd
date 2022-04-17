@@ -1,4 +1,5 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, HostListener, OnInit, Output} from '@angular/core';
+import {ViewportScroller} from "@angular/common";
 
 @Component({
   selector: 'app-categories',
@@ -7,13 +8,26 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 })
 export class CategoriesComponent implements OnInit {
 
-  @Output() data=new EventEmitter<string>();
+  @Output() data = new EventEmitter<string>();
+  private pageYoffset: any;
+  private _event: any;
 
-  constructor() { }
+  constructor(private scroll: ViewportScroller) {
+  }
+
+  @HostListener('window:scroll', ['$event']) onScroll(event: any) {
+    this._event = event;
+    this.pageYoffset = window.pageYOffset;
+  }
 
   ngOnInit(): void {
   }
-  clicked(cat:string):void{
+
+  clicked(cat: string): void {
     this.data.emit(cat);
-}
+  }
+
+  scrollToDown() {
+    this.scroll.scrollToPosition([0, 600]);
+  }
 }

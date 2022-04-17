@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {OwlOptions} from "ngx-owl-carousel-o";
 import {StartSectionService} from "../../services/start-section.service";
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faBalanceScale } from '@fortawesome/free-solid-svg-icons';
 import {animate, state, style, transition, trigger} from "@angular/animations";
+import {ViewportScroller} from "@angular/common";
 
 @Component({
   selector: 'app-services-section',
@@ -16,12 +17,14 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
         opacity: 1,
         background: "#000098",
         'border-radius' : '14px',
+        'cursor': 'pointer'
       })),
       state('inActive', style({
         transform: 'scale(0.7)',
         opacity: 0.8,
         background: "#121212",
-        'border-radius' : '14px'
+        'border-radius' : '14px',
+        'cursor': 'pointer'
       })),
       transition('active => inActive', [
         animate('0.5s')
@@ -59,9 +62,9 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
 export class ServicesSectionComponent implements OnInit {
 
   projectImages! :any[];
-  faFacebook=faFacebook;
+  faBalanceScale=faBalanceScale;
 
-  constructor(private Projectservice:StartSectionService) { }
+  constructor(private Projectservice:StartSectionService, private scroll: ViewportScroller) { }
 
   ngOnInit(): void {
     this.projectSlider()
@@ -98,6 +101,10 @@ export class ServicesSectionComponent implements OnInit {
       }
     },
     nav: true
+  }
+
+  scrollToTop(){
+    this.scroll.scrollToPosition([0,0]);
   }
 
 }

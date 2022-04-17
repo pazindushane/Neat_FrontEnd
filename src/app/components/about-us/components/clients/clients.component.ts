@@ -30,7 +30,7 @@ export class ClientsComponent implements OnInit {
     pullDrag: false,
     dots: false,
     navSpeed: 700,
-    navText: ['<', '>'],
+    // navText: ['<', '>'],
     center: true,
     responsive: {
       0: {
@@ -46,7 +46,7 @@ export class ClientsComponent implements OnInit {
         items: 4
       }
     },
-    nav: true
+    nav: false
   }
 
 }

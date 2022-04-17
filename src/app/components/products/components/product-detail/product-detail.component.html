@@ -1,0 +1,61 @@
+<div class="container-fluid" id="container-fluid-section-one" *ngFor="let slide of productDetails">
+  <div class="row">
+    <div class="col">
+      <div class="d-flex align-items-center justify-content-center mt-5 mb-5">
+        <div class="cover-one-4 row ms-4 me-4">
+          <h1 class="mt-4 mb-5 ms-4" style="color: #126AFE">{{slide.product_name}}</h1>
+          <div class="col ms-4 me-4 mb-4">
+            <div class="contents ms-4 me-4 mb-4">
+              <img [src]='"https://drive.google.com/uc?export=view&id="+slide.image_path' alt="img" class="d-block w-75 ">
+            </div>
+          </div>
+          <div class="col ms-4 me-4">
+            <h2 class="mt-2 mb-3" style="color: #126AFE">Features</h2>
+            <ul class="list-unstyled mt-3a product-ul" style="color: #FFFFFF">
+              <li>Pan Size : &nbsp;<span style="font-weight: bold">{{slide.pan_size}}</span></li>
+              <li>Dimension : &nbsp;<span style="font-weight: bold">{{slide.dimension}}</span></li>
+              <li>Net Weight : &nbsp;<span style="font-weight: bold">{{slide.netweight}}</span></li>
+              <li>Power Supply : &nbsp;<span style="font-weight: bold">{{slide.power_supply}}</span></li>
+              <li>Category : &nbsp;<span style="font-weight: bold">{{slide.category_name}}</span></li>
+            </ul>
+          </div>
+          <div class="w-100"></div>
+          <div class="col ms-4 me-4 mb-4">
+            <h2 class="mb-3"  style="color: #126AFE">Details</h2>
+            <ul class="product-ul" style="color: #FFFFFF" *ngFor="let slidy of productDetailsnew">
+              <li>{{slidy}}</li>
+            </ul>
+          </div>
+          <div class="w-100"></div>
+          <div class="mt-4 container">
+            <h2 class="mb-3" style="color: #126AFE">Models</h2>
+          <table class="table table-dark table-bordered table-hover">
+            <thead>
+            <tr>
+              <th scope="col" >Model Name</th>
+              <th scope="col">Capacity</th>
+              <th scope="col">Readability</th>
+              <th scope="col" >Calibration</th>
+            </tr>
+            </thead>
+            <tbody *ngFor="let sliders of productModels" >
+            <tr>
+              <th scope="row">{{sliders.model_name}}</th>
+              <td >{{sliders.capacity}}</td>
+              <td >{{sliders.readability}}</td>
+              <td >{{sliders.calibration_weight}}</td>
+            </tr>
+            </tbody>
+          </table>
+          </div>
+
+          <div class="w-100 mt-4"></div>
+          <div class="col ms-4 me-4 mb-4 d-flex align-items-center justify-content-center mt-4 mb-3" *ngFor="let imgs of productImages">
+            <img [src]='"https://drive.google.com/uc?export=view&id="+imgs.image_path' alt="img" style="width: 200px; height: 200px; object-fit: cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

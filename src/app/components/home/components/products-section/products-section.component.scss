@@ -1,10 +1,41 @@
 .txt-product-h{
-  font-family: RohnRounded ☞;
+  font-family: Rajdhani;
 }
 
 .btn-viewmore{
   background: #D32427;
   color: white;
   font-family: Quicksand;
-  font-size: 1.4vw;
+  font-size: 16px;
 }
+
+.owl-carousels .nav-btn{
+  height: 47px;
+  position: absolute;
+  width: 26px;
+  cursor: pointer;
+  top: 100px !important;
+}
+
+.owl-carousels .owl-prev.disabled,
+.owl-carousels .owl-next.disabled{
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.owl-carousels .prev-slide{
+  background: url(https://i.ibb.co/MZLHzRs/navigate-before.png) no-repeat scroll 0 0;
+  left: -33px;
+}
+.owl-carousels .next-slide{
+  background: url(https://i.ibb.co/mS1Vt2h/navigate-next.png) no-repeat scroll -24px 0px;
+  right: -33px;
+}
+.owl-carousels .prev-slide:hover{
+  background-position: 0px -53px;
+}
+.owl-carousels .next-slide:hover{
+  background-position: -24px -53px;
+}
+
+
